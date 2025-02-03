@@ -1,0 +1,58 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <!-- Code Editor Section -->
+            <div class="editor-container">
+                <div class="editor-header">
+                    <div class="window-controls">
+                        <div class="control red"></div>
+                        <div class="control yellow"></div>
+                        <div class="control green"></div>
+                    </div>
+                    <span class="editor-title">editor</span>
+                </div>
+                <div class="editor-body">
+                    <div class="line-numbers" id="lineNumbers"></div>
+                    <textarea id="codeEditor" spellcheck="false" placeholder="Write or paste your code here..."></textarea>
+                </div>
+            </div>
+
+            <!-- Console Output Section -->
+            <div class="console-container">
+                <div class="console-header">
+                    <span>Console Output</span>
+                </div>
+                <div class="console-output" id="consoleOutput">
+                    > Ready for output...
+                </div>
+            </div>
+
+            <!-- Execute Button -->
+            <button id="executeBtn" class="execute-btn">
+                <span class="btn-text">Execute Code</span>
+                <div class="spinner hidden"></div>
+            </button>
+        </div>
+
+        <!-- Right Panel for Notes/Documentation -->
+        <div class="right-panel">
+            <div class="notes-container">
+                <div class="notes-header">
+                    <span>Code Summary</span>
+                </div>
+                <textarea id="notesArea" placeholder="Summar is brewing..................."></textarea>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

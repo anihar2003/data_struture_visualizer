@@ -1,0 +1,69 @@
+<svg width="200" height="200" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .window {
+        fill: #1E1E2E;
+        stroke: #3DC2EC;
+        stroke-width: 2;
+      }
+      .header {
+        fill: #535C91;
+      }
+      .line {
+        fill: #3DC2EC;
+      }
+      .variable {
+        fill: #3DC2EC;
+        stroke: #1E1E2E;
+        stroke-width: 2;
+      }
+      .arrow {
+        fill: none;
+        stroke: #3DC2EC;
+        stroke-width: 2;
+        marker-end: url(#arrowhead);
+      }
+      .text {
+        fill: #EEEEEE;
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+        text-anchor: middle;
+        alignment-baseline: middle;
+      }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3DC2EC" />
+    </marker>
+  </defs>
+
+  <!-- Code Window -->
+  <rect x="50" y="50" width="130" height="180" class="window" />
+  <rect x="50" y="50" width="130" height="20" class="header" />
+  <circle cx="60" cy="60" r="4" fill="red"/>
+  <circle cx="75" cy="60" r="4" fill="yellow"/>
+  <circle cx="90" cy="60" r="4" fill="green"/>
+  
+  <!-- Code Lines -->
+  <rect x="60" y="80" width="110" height="10" class="line" />
+  <rect x="60" y="100" width="90" height="10" class="line" />
+  <rect x="60" y="120" width="100" height="10" class="line" />
+  <rect x="60" y="140" width="80" height="10" class="line" />
+  <rect x="60" y="160" width="90" height="10" class="line" />
+  
+  <!-- Execution Path -->
+  <line x1="180" y1="140" x2="230" y2="140" class="arrow" />
+  <line x1="230" y1="140" x2="230" y2="200" class="arrow" />
+  <line x1="230" y1="200" x2="300" y2="200" class="arrow" />
+
+  <!-- Variables & Output -->
+  <rect x="300" y="180" width="50" height="20" class="variable" />
+  <rect x="300" y="210" width="50" height="20" class="variable" />
+
+  <text x="325" y="195" class="text">x = 5</text>
+  <text x="325" y="225" class="text">y = 10</text>
+
+  <!-- Labels -->
+  <text x="115" y="40" class="text">Code</text>
+  <text x="265" y="130" class="text">Execution</text>
+  <text x="325" y="170" class="text">Variables</text>
+</svg>
